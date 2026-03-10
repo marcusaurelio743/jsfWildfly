@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://xmlns.jcp.org/jsf/html"
+  xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+    <title>Primeira Pagina JSF</title>
+</h:head>
+
+<body>
+ 	<h:form>
+ 		<h:panelGrid columns="2">
+ 			<h:outputLabel>ID:</h:outputLabel>
+ 			<h:inputText readonly="true" value="#{usuarioPessoaBean.pessoa.id}"/>
+ 			<h:outputLabel>Nome:</h:outputLabel>
+ 			<h:inputText value="#{usuarioPessoaBean.pessoa.nome}"/>
+ 			<h:outputLabel>Sobrenome:</h:outputLabel>
+ 			<h:inputText value="#{usuarioPessoaBean.pessoa.sobrenome}"/>
+ 			<h:outputLabel>Idade:</h:outputLabel>
+ 			<h:inputText value="#{usuarioPessoaBean.pessoa.idade}"/>
+ 			<h:outputLabel>Login:</h:outputLabel>
+ 			<h:inputText value="#{usuarioPessoaBean.pessoa.login}"/>
+ 			<h:outputLabel>Senha:</h:outputLabel>
+ 			<h:inputSecret value="#{usuarioPessoaBean.pessoa.senha}"/>
+ 		</h:panelGrid>
+ 	</h:form>   
+</body>
+</html>
