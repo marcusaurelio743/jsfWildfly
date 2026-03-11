@@ -28,6 +28,26 @@
  		</h:panelGrid>
  			<h:commandButton value="Salvar" action="#{usuarioPessoaBean.salvar}"/>
  			<h:commandButton value="Novo" action="#{usuarioPessoaBean.novo}"/>
+ 			<br/>
+ 			
+ 			<h:dataTable value="#{usuarioPessoaBean.list}" var = "user">
+ 				<h:column>
+ 					<h:outputLabel value="#{user.id}"/>
+ 				</h:column>
+ 				
+ 				<h:column>
+ 					<h:outputLabel value="#{user.nome}"/>
+ 				</h:column>
+ 				
+ 				<h:column>
+ 					<h:outputLabel value="#{user.sobrenome}"/>
+ 				</h:column>
+ 				
+ 				<h:column>
+ 					<h:outputLabel value="#{user.idade}"/>
+ 				</h:column>
+ 			
+ 			</h:dataTable>
  	</h:form>   
 </body>
 </html>
