@@ -30,7 +30,7 @@ public class UsuarioPessoa {
 	private String senha;
 	private Integer idade;
 	
-	@OneToMany(mappedBy = "pessoa", fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "pessoa", fetch = FetchType.LAZY)
 	private List<TelefoneUser> telefoneUsers;
 	
 	public List<TelefoneUser> getTelefoneUsers() {
