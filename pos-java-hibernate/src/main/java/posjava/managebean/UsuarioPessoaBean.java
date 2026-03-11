@@ -21,5 +21,17 @@ public class UsuarioPessoaBean  {
 	public UsuarioPessoa getPessoa() {
 		return pessoa;
 	}
+	
+	public String salvar() {
+		dao.salvar(pessoa);
+		novo();
+		return "";
+	}
+	
+	public String novo() {
+		pessoa = new UsuarioPessoa();
+		
+		return "";
+	}
 
 }

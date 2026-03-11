@@ -10,17 +10,24 @@
  		<h:panelGrid columns="2">
  			<h:outputLabel>ID:</h:outputLabel>
  			<h:inputText readonly="true" value="#{usuarioPessoaBean.pessoa.id}"/>
+ 			
  			<h:outputLabel>Nome:</h:outputLabel>
  			<h:inputText value="#{usuarioPessoaBean.pessoa.nome}"/>
+ 			
  			<h:outputLabel>Sobrenome:</h:outputLabel>
  			<h:inputText value="#{usuarioPessoaBean.pessoa.sobrenome}"/>
+ 			
  			<h:outputLabel>Idade:</h:outputLabel>
  			<h:inputText value="#{usuarioPessoaBean.pessoa.idade}"/>
+ 			
  			<h:outputLabel>Login:</h:outputLabel>
  			<h:inputText value="#{usuarioPessoaBean.pessoa.login}"/>
+ 			
  			<h:outputLabel>Senha:</h:outputLabel>
  			<h:inputSecret value="#{usuarioPessoaBean.pessoa.senha}"/>
  		</h:panelGrid>
+ 			<h:commandButton value="Salvar" action="#{usuarioPessoaBean.salvar}"/>
+ 			<h:commandButton value="Novo" action="#{usuarioPessoaBean.novo}"/>
  	</h:form>   
 </body>
 </html>
