@@ -32,15 +32,21 @@ public class UsuarioPessoaBean  {
 		return "";
 	}
 	
-	public String novo() {
+	public void novo() {
 		pessoa = new UsuarioPessoa();
 		
-		return "";
+		
 	}
 	
 	public List<UsuarioPessoa> getList() {
 		list = dao.listarTodos(UsuarioPessoa.class);
 		return list;
+	}
+	
+	public String excluir() {
+		dao.deletar(pessoa);
+		novo();
+		return "";
 	}
 
 }

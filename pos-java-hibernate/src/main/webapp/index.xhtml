@@ -65,6 +65,13 @@
  						<f:setPropertyActionListener value="#{user}" target="#{usuarioPessoaBean.pessoa}"/>
  					</h:commandLink>
  				</h:column>
+ 				
+ 				<h:column>
+ 					<f:facet name="header">Excluir</f:facet>
+ 					<h:commandLink value="Excluir" action="#{usuarioPessoaBean.excluir}">
+ 						<f:setPropertyActionListener value="#{user}" target="#{usuarioPessoaBean.pessoa}"/>
+ 					</h:commandLink>
+ 				</h:column>
  			
  			</h:dataTable>
  	</h:form>   
