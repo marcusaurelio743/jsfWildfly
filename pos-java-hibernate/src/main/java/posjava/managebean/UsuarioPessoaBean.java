@@ -13,7 +13,7 @@ import posjava.model.UsuarioPessoa;
 @ViewScoped
 public class UsuarioPessoaBean  {
 	
-	
+	//aqui você declara os objetos que vai usar no bean
 	private UsuarioPessoa pessoa = new UsuarioPessoa();
 	private DaoGeneric<UsuarioPessoa> dao = new DaoGeneric<>();
 	private List<UsuarioPessoa> list = new ArrayList<UsuarioPessoa>();
